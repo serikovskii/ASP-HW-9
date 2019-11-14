@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebApplication15.Models.User>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">List users</h1>
+    @foreach (var item in Model)
+    {
+    <p>@Html.DisplayFor(modelItem => item.Login)</p>
+    }
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
